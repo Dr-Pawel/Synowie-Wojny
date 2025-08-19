@@ -31,8 +31,5 @@ namespace Synowie_Wojny
             if (CurrentHP < 0) CurrentHP = 0;
         }
 
-
-        
-
     }
 }

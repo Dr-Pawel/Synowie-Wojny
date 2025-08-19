@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Programming\\C# projects\\Synowie Wojny\\Synowie Wojny\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{170F5473-D237-45A3-AD87-F24B98AF2279}|Synowie Wojny.csproj|e:\\programming\\c# projects\\synowie wojny\\synowie wojny\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{170F5473-D237-45A3-AD87-F24B98AF2279}|Synowie Wojny.csproj|solutionrelative:menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{170F5473-D237-45A3-AD87-F24B98AF2279}|Synowie Wojny.csproj|e:\\programming\\c# projects\\synowie wojny\\synowie wojny\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{170F5473-D237-45A3-AD87-F24B98AF2279}|Synowie Wojny.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Programming\\C# projects\\Synowie Wojny\\Synowie Wojny\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\Programming\\C# projects\\Synowie Wojny\\Synowie Wojny\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAASwIYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-15T15:15:54.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "MenuManager.cs",
+              "DocumentMoniker": "E:\\Programming\\C# projects\\Synowie Wojny\\Synowie Wojny\\MenuManager.cs",
+              "RelativeDocumentMoniker": "MenuManager.cs",
+              "ToolTip": "E:\\Programming\\C# projects\\Synowie Wojny\\Synowie Wojny\\MenuManager.cs",
+              "RelativeToolTip": "MenuManager.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAA/wJAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T15:43:22.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "E:\\Programming\\C# projects\\Synowie Wojny\\Synowie Wojny\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "E:\\Programming\\C# projects\\Synowie Wojny\\Synowie Wojny\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-15T15:21:21.532Z",
               "EditorCaption": ""
