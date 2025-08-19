@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build csharp",
+      "program": "/home/drpawel/Praca/SynowieWojny/Synowie-Wojny/Synowie Wojny/bin/Debug/net8.0/Synowie Wojny.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "externalTerminal"
+    }
+  ]
+}
