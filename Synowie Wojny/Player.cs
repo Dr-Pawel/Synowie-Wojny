@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Synowie_Wojny
 {
-    
-    internal class Player
+    public class Player
     {
         public string Race { get; set; }
         public string Name { get; set; }

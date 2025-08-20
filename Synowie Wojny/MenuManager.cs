@@ -46,6 +46,11 @@ namespace Synowie_Wojny
               |_|  (_) |___| /_\_\ |_|  \__| 
             ";
 
+        public string ChosenName { get; private set; }
+        public string ChosenRace { get; private set; }
+        public int ChosenAge { get; private set; }
+
+
         public void DrawMainMenu()
         {
             Console.ForegroundColor = ConsoleColor.Red;
@@ -63,37 +68,47 @@ namespace Synowie_Wojny
             Console.ResetColor();
 
         }
-        public void ChooseMainMenu()
-        {
-            string playerInput = Console.ReadLine();
+        public int ChooseMainMenu()
+{
+    string playerInput = Console.ReadLine();
 
-            if (playerInput == "1")
-            {
-                Console.Clear();
-                StartNewGame();
-            }
-            else if (playerInput == "2")
-            {
-                Console.Clear();
-                Console.WriteLine("load Game");
-            }
-            else if (playerInput == "3")
-            {
-                Console.Clear();
-                Console.WriteLine("Options");
-            }
-            else if (playerInput == "4")
-            {
-                Console.Clear();
-                Environment.Exit(1);
-            }
-        }
-        private void StartNewGame()
-        {
-            Console.Clear();
-            Player player = new Player();
+    if (playerInput == "1")
+    {
+        Console.Clear();
+        return 1;
+    }
+    else if (playerInput == "2")
+    {
+        Console.Clear();
+        Console.WriteLine("Load Game");
+        return 2;
+    }
+    else if (playerInput == "3")
+    {
+        Console.Clear();
+        Console.WriteLine("Options");
+        return 3;
+    }
+    else if (playerInput == "4")
+    {
+        Console.Clear();
+        Environment.Exit(1);
+        return 4;
+    }
 
-            #region race
+    return 0; // jeśli wpisano coś złego
+}
+
+        public (string race, string name, int age) AskPlayerData()
+    {
+        string race = AskRace();
+        string name = AskName();
+        int age = AskAge();
+        return (race, name, age);
+    }
+
+        private string AskRace()
+        {
             Console.WriteLine("hello new warrior, please tell me what race are you");
             string raceChoice;
             do
@@ -105,34 +120,36 @@ namespace Synowie_Wojny
 
             if (raceChoice == "1")
             {
-                player.Race = "Orc";
+                ChosenRace = "Orc";
             }
             else if (raceChoice == "2")
             {
-                player.Race = "Troll";
+                ChosenRace = "Troll";
             }
             else if (raceChoice == "3")
             {
-                player.Race = "Tauren";
+                ChosenRace = "Tauren";
             }
-            WriteColored($"race chosen : {player.Race}", ConsoleColor.Yellow);
+            WriteColored($"race chosen : {ChosenRace}", ConsoleColor.Yellow);
+            return ChosenRace;
             Console.ResetColor();
-            #endregion
-
-            #region name
+        }
+        private string AskName()
+        {
             string nameChoice;
             Console.WriteLine("Now, please tell me, what is your name?");
             WriteColored("Name:", ConsoleColor.Blue);
             nameChoice = Console.ReadLine();
 
-            player.Name = nameChoice;
+            ChosenName = nameChoice;
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"name chosen : {player.Name}");
+            Console.WriteLine($"name chosen : {nameChoice}");
+            return nameChoice;
             Console.ResetColor();
-            #endregion
-
-            #region age
-            int age;
+        }
+        private int AskAge()
+        {
+             int age;
             Console.WriteLine("And i also need to know, how old are you");
             WriteColored("Age:", ConsoleColor.Blue);
 
@@ -140,12 +157,11 @@ namespace Synowie_Wojny
             {
                 WriteColored("Please enter a valid number!", ConsoleColor.Red);
             }
-            player.Age = age;
-            WriteColored($"You are {player.Age} old", ConsoleColor.Yellow);
+            ChosenAge = age;
+            WriteColored($"You are {age} old", ConsoleColor.Yellow);
+            return age;
             Console.ResetColor();
-            #endregion
         }
-
         private void WriteColored(string text, ConsoleColor color)
         {
             Console.ForegroundColor = color;

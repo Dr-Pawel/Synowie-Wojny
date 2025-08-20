@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Synowie_Wojny
 {
-    internal interface IEnemy
+    public interface IEnemy
     {
         
     }
